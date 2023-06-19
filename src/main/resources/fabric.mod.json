@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "editplayernbt",
+  "version": "${version}",
+  "name": "Edit Player NBT",
+  "description": "Allows you to edit player NBT",
+  "authors": [
+    "capitalistspz"
+  ],
+  "contact": {
+    "repo": "https://github.com/capitalistspz/Edit Player NBT"
+  },
+  "license": "LGPL-3.0",
+  "icon": "",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+    ],
+    "main": [
+    ]
+  },
+  "mixins": [
+    "editplayernbt.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
