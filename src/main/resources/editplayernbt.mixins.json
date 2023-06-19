@@ -4,6 +4,7 @@
   "package": "com.capitalistspz.editplayernbt.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "EditPlayerNBT"
   ],
   "client": [
   ],
