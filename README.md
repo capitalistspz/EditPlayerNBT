@@ -12,14 +12,19 @@ A mod that just removes the line preventing player NBT from being modified
 - `Pos` - position
 - `AbsorptionAmount` - Amount of absorption
 
-### NBT values that don't
-- `Motion` - velocity - value is ignored
-- `Rotation` - value is ignored
-- `abilities.mayfly` - whether you're able to fly - value is ignored, and gets set to correct value on reconnect
-- `abilities.flying` - whether you're flying - value is ignored, and gets set to correct value on reconnect
+### Nbt values that change player state on relog
+- `Rotation`
 - `SelectedItemSlot` - slot selected
 - `XpP` - individual xp points
 - `XpLevel` - xp levels
 - `XpTotal` - total xp
-- `Dimension` - values is ignored, and always instantly changes to correct value
-- `playerGameType` - gamemode - value is ignored, and always gets instantly set to the correct gamemode
+
+### NBT values that don't change state when edited
+- `Motion` - velocity
+- `abilities.mayfly` (resets on reconnect) - whether you're able to fly 
+- `abilities.flying` (resets on reconnect) - whether you're flying 
+- `Dimension` (resets instantly)
+- `playerGameType` (resets instantly) - gamemode
+
+
+There are more that I haven't checked yet
